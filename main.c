@@ -1,6 +1,12 @@
 #include <SDL2/SDL.h>
 #include <stdio.h>
 
+void cleanup(SDL_Window *window, SDL_Renderer *renderer) {
+    SDL_DestroyRenderer(renderer);
+    SDL_DestroyWindow(window);
+    SDL_Quit();
+}
+
 int main() {
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
         printf("SDL could not initialize! SDL_Error: %s\n", SDL_GetError());
@@ -41,8 +47,6 @@ int main() {
         }
     }
 
-    SDL_DestroyRenderer(renderer);
-    SDL_DestroyWindow(window);
-    SDL_Quit();
+    cleanup(window, renderer);
     return 0;
 }
