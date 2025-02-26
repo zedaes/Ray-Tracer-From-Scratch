@@ -1,7 +1,7 @@
 # Prerequisites
 *.d
 
-# Object files
+# Compiler-generated object files
 *.o
 *.ko
 *.obj
@@ -12,23 +12,21 @@
 *.map
 *.exp
 
-# Precompiled Headers
+# Precompiled headers
 *.gch
 *.pch
 
-# Libraries
+# Static and dynamic libraries
 *.lib
 *.a
 *.la
 *.lo
-
-# Shared objects (inc. Windows DLLs)
 *.dll
 *.so
 *.so.*
 *.dylib
 
-# Executables
+# Executable files
 *.exe
 *.out
 *.app
@@ -36,13 +34,13 @@
 *.x86_64
 *.hex
 
-# Debug files
+# Debugging and profiling files
 *.dSYM/
 *.su
 *.idb
 *.pdb
 
-# Kernel Module Compile Results
+# Kernel module compilation artifacts
 *.mod*
 *.cmd
 .tmp_versions/
@@ -51,23 +49,18 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+# CMake build directories
+cmake-build-*/
 
-# User-specific stuff
+# IntelliJ-based IDEs (JetBrains)
+.idea/
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
-
-# AWS User-specific
 .idea/**/aws.xml
-
-# Generated files
 .idea/**/contentModel.xml
-
-# Sensitive or high-churn files
 .idea/**/dataSources/
 .idea/**/dataSources.ids
 .idea/**/dataSources.local.xml
@@ -75,15 +68,15 @@ dkms.conf
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
-
-# Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
+.idea/**/mongoSettings.xml
+.idea/**/replstate.xml
+.idea/**/sonarlint/
+.idea/httpRequests
 
-# Gradle and Maven with auto-import
-# When using Gradle or Maven with auto-import, you should exclude module files,
-# since they will be recreated, and may cause churn.  Uncomment if using
-# auto-import.
+# Gradle and Maven (auto-import)
+# Uncomment if needed
 # .idea/artifacts
 # .idea/compiler.xml
 # .idea/jarRepositories.xml
@@ -93,38 +86,21 @@ dkms.conf
 # *.iml
 # *.ipr
 
-# CMake
-cmake-build-*/
-
-# Mongo Explorer plugin
-.idea/**/mongoSettings.xml
-
-# File-based project format
-*.iws
-
-# IntelliJ
+# Java-based IDE outputs
 out/
-
-# mpeltonen/sbt-idea plugin
 .idea_modules/
 
-# JIRA plugin
+# Atlassian JIRA plugin
 atlassian-ide-plugin.xml
 
 # Cursive Clojure plugin
 .idea/replstate.xml
 
-# SonarLint plugin
-.idea/sonarlint/
-
-# Crashlytics plugin (for Android Studio and IntelliJ)
+# Crashlytics and Firebase-related files
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-# Editor-based Rest Client
-.idea/httpRequests
-
-# Android studio 3.1+ serialized cache file
-.idea/caches/build_file_checksums.ser
+# JetBrains' File-based project format
+*.iws
